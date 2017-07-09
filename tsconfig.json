@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "es5", // Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', or 'ESNEXT'.
+    "module": "none", // Specify module code generation: 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'.
+    "lib": [
+      "es2015",
+      "dom"
+    ],
+    "allowJs": false, // Allow javascript files to be compiled.
+    "sourceMap": true, // Generates corresponding '.map' file.
+    "outFile": "./src/app/ts/main.js", // Concatenate and emit output to single file.
+    "removeComments": true, // Do not emit comments to output.
+    "strict": true // Enable all strict type-checking options.
+  },
+  "include": [
+    "./src/app/app.module.ts",
+    "./src/app/**/*.ts"
+  ],
+  "exclude":[
+    "./node_modules",
+    "./bower_components"
+  ]
+}

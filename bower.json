@@ -1,0 +1,34 @@
+{
+  "name": "voya-demo",
+  "description": "Voya demo.",
+  "main": "app.module.ts",
+  "authors": [
+    "Alexandru Marian Chirica"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "angularjs",
+    "typescript"
+  ],
+  "homepage": "https://github.com/Aspersion/voya-angularjs",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "=1.5.11",
+    "angular-ui-router": "=0.2.15",
+    "bootstrap-sass": "=3.3.7",
+    "jquery": "=3.2.1",
+    "stomp-websocket": "=2.3.4",
+    "angular-cache-buster": "=0.4.3",
+    "angular-websocket": "=1.0.14"
+  },
+  "resolutions": {
+    "angular": "1.5.11"
+  }
+}

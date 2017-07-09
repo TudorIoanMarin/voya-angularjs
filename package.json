@@ -1,0 +1,33 @@
+{
+  "name": "voya-demo",
+  "version": "1.0.0",
+  "description": "Voya demo.",
+  "private": true,
+  "main": "app.module.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aspersion/voya-angularjs.git"
+  },
+  "keywords": [
+    "angularjs",
+    "typescript"
+  ],
+  "author": "Alexandru Marian Chirica",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aspersion/voya-angularjs/issues"
+  },
+  "homepage": "https://github.com/Aspersion/voya-angularjs#readme",
+  "devDependencies": {
+    "@types/angular": "^1.6.25",
+    "grunt": "^0.4.5",
+    "grunt-sass": "^1.1.0",
+    "grunt-ts": "^6.0.0-beta.16",
+    "node-sass-css-importer": "0.0.3",
+    "typescript": "^2.4.1",
+    "wiredep": "^2.2.2"
+  }
+}
