@@ -1,30 +1,27 @@
-function setupUiRouter($stateProvider: any, $urlRouterProvider: any):void {
+function setupUiRouter($stateProvider: ng.ui.IStateProvider, $urlRouterProvider: ng.ui.IUrlRouterProvider): void {
     // Redirect all to root
     $urlRouterProvider.otherwise('/not-found');
 
     // Root state
     $stateProvider.state('root', {
-        abstrct: true,
+        abstract: true,
         views: {
             'navbar@': {
                 controller: 'navbarController',
                 templateUrl: './app/core/navbar/navbar.html'
             },
-            'content@': {
-                controller: 'contentController',
-                templateUrl: './app/core/content/content.html'
-            },
             'footer@': {
                 controller: 'footerController',
+                controllerAs: '$ctrl',
                 templateUrl: './app/core/footer/footer.html'
             }
         }
     });
 }
 
-function logHttpInterceptor($log: any): any {
+function logHttpInterceptor($log: ng.ILogService): ng.IHttpInterceptor {
     return {
-        request: (config: any): any => {
+        request: (config: ng.IRequestConfig): ng.IRequestConfig => {
             $log.debug(`The app has requested <b>${config.url}</b>.`);
 
             return config;
@@ -36,26 +33,29 @@ logHttpInterceptor.$inject = [
     '$log'
 ];
 
-function setupHttpInterceptors($httpProvider: any): void {
+function setupHttpInterceptors($httpProvider: ng.IHttpProvider): void {
     $httpProvider.interceptors.push(logHttpInterceptor);
 }
 
-function moduleConfiguration (
-    $httpProvider: any,
-    $stateProvider: any,
-    $urlRouterProvider: any
-):void {
+function moduleConfiguration(
+    $httpProvider: ng.IHttpProvider,
+    $stateProvider: ng.ui.IStateProvider,
+    $urlRouterProvider: ng.ui.IUrlRouterProvider
+): void {
     setupUiRouter($stateProvider, $urlRouterProvider);
     setupHttpInterceptors($httpProvider);
 }
 
 moduleConfiguration.$inject = [
-    '$stateProvider'
+    '$httpProvider',
+    '$stateProvider',
+    '$urlRouterProvider'
 ];
 
 let voyaApp: ng.IModule = angular.module('voya', [
     'ngCacheBuster',
-    'angular-websocket'
+    'angular-websocket',
+    'ui.router'
 ]);
 
 voyaApp.config(moduleConfiguration);

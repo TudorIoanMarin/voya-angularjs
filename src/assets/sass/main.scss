@@ -1,3 +1,9 @@
-@import "CSS:bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// bower:scss
+@import "../../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
 
-@import "./general.scss";
+@import "./helpers";
+@import "./general";
+
+// Components
+@import "../../app/core/footer/footer";

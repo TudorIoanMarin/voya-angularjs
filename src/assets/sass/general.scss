@@ -1,0 +1,17 @@
+#shell {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+nav[ui-view="navbar"] {
+    height: 10vh;
+}
+
+section[ui-view="content"] {
+    height: 80vh;
+}
+
+footer[ui-view="footer"] {
+    height: 10vh;
+}
