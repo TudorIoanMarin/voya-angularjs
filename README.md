@@ -12,8 +12,8 @@ This includes several tasks:
 
 4. Remove bower and use only npm.
 
-5. In the home route, add a list which displays all of the former bower libraries. Check if their providers/services are present and change the list item some colour of your choice.
+5. In the home route, add a list which displays all of the former bower libraries. Check if their providers/services are present and change the list item to some colour of your choice. For example "Angular Websockets is present in our app.".
 
-6. Add a route for the not-found controller, change it to AngularJs + JavaScript and use the UpgradeAdapter class.
+6. The "not-found" controller needs to be changed to AngularJS + JavaScript, have it's route configured and it should use upgradeAdapter.
 
 Please do not remove the footer text. You can add more to it. :D
