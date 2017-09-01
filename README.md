@@ -14,6 +14,6 @@ This includes several tasks:
 
 5. In the home route, add a list which displays all of the former bower libraries. Please check if their provider/services exist and change the colour of each list item to anything you prefer. For example if $websocket exists as a service display "Angular Websocket is present in our app." and change the colour.
 
-6. The "not-found" controller needs to be changed to AngularJS + JavaScript, have it's route configured and it should use upgradeAdapter.
+6. (optional) The "not-found" controller needs to be changed to AngularJS + JavaScript, have it's route configured and it should use upgradeAdapter.
 
 Please do not remove the footer text. You can add more to it. :D
