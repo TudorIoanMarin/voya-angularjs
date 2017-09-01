@@ -8,7 +8,7 @@ This includes several tasks:
 
 2. Use Webpack to load all of the files.
 
-3. Create a navbar using Bootstrap or Angular Material (preferred, also if you can change everything to use it and remove Bootstrap, it's a bonus). You don't need to add other routes or pages.
+3. (optional) Create a navbar using Bootstrap or Angular Material (preferred, also if you can change everything to use it and remove Bootstrap, it's a bonus). You don't need to add other routes or pages.
 
 4. Remove bower and use only npm.
 
