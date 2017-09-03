@@ -3,8 +3,7 @@
 
 <head>
     <title>Voya - AngularJS</title>
-
-    <link rel="stylesheet" href="assets/stylesheets/main.css">
+    <link rel="stylesheet" href="dist/style.css">
 </head>
 
 <body ng-app="voya">
@@ -14,17 +13,7 @@
         <footer ui-view="footer" ng-cloak></footer>
     </div>
 
-    <!-- bower:js -->
-    <script src="../bower_components/jquery/dist/jquery.js"></script>
-    <script src="../bower_components/angular/angular.js"></script>
-    <script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-    <script src="../bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
-    <script src="../bower_components/stomp-websocket/lib/stomp.min.js"></script>
-    <script src="../bower_components/angular-cache-buster/angular-cache-buster.js"></script>
-    <script src="../bower_components/angular-websocket/angular-websocket.min.js"></script>
-    <!-- endbower -->
-
-    <script src="./app/ts/main.js"></script>
+    <script src="dist/vendor-bundle.js"></script>
+    <script src="dist/app-bundle.js"></script>
 </body>
-
 </html>

@@ -1,9 +1,9 @@
-// bower:scss
-@import "../../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
-// endbower
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+@import "../../../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+
 
 @import "./helpers";
 @import "./general";
 
-// Components
+
 @import "../../app/core/footer/footer";
